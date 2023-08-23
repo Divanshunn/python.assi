@@ -1,0 +1,63 @@
+Q.1 Difference between unicode and ascii?
+
+ANS.In summary, the key differences between ASCII and Unicode are:
+
+Scope: ASCII is limited to a small set of characters, primarily English letters, numerals, and basic symbols. Unicode encompasses a vast range of characters from different languages, symbols, and special characters.
+Number of Characters: ASCII includes 128 characters, while Unicode includes over 143,000 characters (as of Unicode 14.0.0).
+Bit Representation: ASCII uses 7 bits per character, while Unicode can use various bit representations, such as 8, 16, or 32 bits, depending on the encoding form.
+Languages: ASCII primarily supports English, while Unicode supports a wide variety of languages and scripts from around the world.
+Compatibility: UTF-8, a Unicode encoding form, is backwards compatible with ASCII, which means that ASCII characters are also valid UTF-8 characters.
+Unicode has largely replaced ASCII in modern computing due to its ability to accommodate a global range of characters and symbols.
+
+
+Q.2 Dfference between y=x and y==x?
+ANS. y=x is used for variable assignment, where the value of the right-hand side (x) is assigned to the variable on the left-hand side (y).
+y==x is used for comparison, checking whether the values of y and x are equal.
+
+Q.3 Difference between xor and bitwise?
+ANS. Bitwise operations and the XOR (exclusive OR) operation are both fundamental concepts in computer programming that involve manipulating individual bits in binary representations. However, they serve different purposes and have different behaviors:
+
+1. **Bitwise Operations:**
+   Bitwise operations involve manipulating individual bits of numbers at the binary level. There are several bitwise operators: AND (`&`), OR (`|`), NOT (`~`), and XOR (`^`). These operators are used to perform operations between corresponding bits of two numbers. Here's a brief overview of each:
+
+   - **AND (`&`):** Performs a logical AND between corresponding bits of two numbers. The result is 1 if both bits are 1; otherwise, it's 0.
+
+   - **OR (`|`):** Performs a logical OR between corresponding bits of two numbers. The result is 1 if at least one of the bits is 1.
+
+   - **NOT (`~`):** Flips the bits of a number. It changes 0s to 1s and vice versa.
+
+   - **XOR (`^`):** Performs an exclusive OR between corresponding bits of two numbers. The result is 1 if the bits are different (one is 0 and the other is 1), and it's 0 if the bits are the same (both 0 or both 1).
+
+   Bitwise operations are often used for tasks such as setting, clearing, or toggling specific bits within a number, or for optimizing certain calculations that can be performed at the bit level.
+
+2. **XOR (Exclusive OR) Operation:**
+   The XOR operation is a binary operation that returns true (1) if the number of true (1) inputs is odd. It returns false (0) if the number of true inputs is even. In other words, it checks if an odd number of inputs are true.
+
+   In terms of bitwise XOR (`^`), it operates at the binary level on individual bits of two numbers. As mentioned earlier, the XOR operation returns 1 if the bits being compared are different, and it returns 0 if the bits are the same.
+
+   XOR has various applications in programming, including cryptography, error checking, and data manipulation. It's often used to toggle or invert specific bits and to perform operations that require alternating behavior.
+
+In summary:
+
+- **Bitwise operations (`&`, `|`, `~`, `^`):** Manipulate individual bits of numbers using logic-based operations such as AND, OR, NOT, and XOR. These operations are fundamental for bit-level manipulation and optimization.
+
+- **XOR operation (`^`):** In the context of bitwise operations, XOR operates at the binary level and returns 1 if the bits being compared are different (exclusive OR behavior), and 0 if the bits are the same.
+
+Both concepts are important for low-level manipulation and for understanding the binary representation of data in computing.
+
+
+Q.4. call by value?
+ANS. Call by Value:
+In traditional call-by-value, a copy of the value of the variable is passed to the function. Any changes made to the parameter within the function do not affect the original variable outside the function.
+
+Q.5. indexing and slicing operator on string data.
+ANS.Indexing:
+Indexing allows you to access individual characters in a string by their position (index). The index starts from 0 for the first character and increases sequentially. You can use positive indices to count from the beginning and negative indices to count from the end.
+
+Slicing:
+Slicing allows you to extract a portion (substring) of a string. It uses the syntax [start:end], where start is the index of the first character you want to include, and end is the index just after the last character you want to include. The character at the end index is not included in the slice.
+ 
+
+
+
+
